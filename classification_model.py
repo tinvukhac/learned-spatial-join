@@ -89,7 +89,7 @@ class ClassificationModel(ModelInterface):
 
         output_f.close()
 
-    def test(self, tabular_path: str, target: str, model_path: str, model_weights_path=None) -> (float, float, float, float):
+    def test(self, tabular_path: str, target: str, model_path: str, model_weights_path=None) -> tuple[float, float, float, float]:
         """
         Evaluate the accuracy metrics of a trained  model for spatial join cost estimator
         :return mean_squared_error, mean_absolute_percentage_error, mean_squared_logarithmic_error, mean_absolute_error
