@@ -1,17 +1,19 @@
-# Towards a Learned Cost Model for Distributed Spatial Join: Data, Code & Models
+# A learning based framework for spatial join processing: estimation, optimization and tuning
 
-This is the end-point for the resources of the paper "A Learned Query Optimizer for Spatial Join", Tin Vu, Alberto Belussi, Sara Migliorini, and Ahmed Eldawy, 29th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL 2021).
+This is the end-point for the resources of the paper "A learning based framework for spatial join processing: estimation, optimization and tuning", Tin Vu, Alberto Belussi, Sara Migliorini, and Ahmed Eldawy. This paper has been submitted to The International Journal on Very Large Data Bases (VLDB Journal).
 
-## Datasets and corresponding section in the paper
+## Datasets 
 1. [Join input datasets](https://drive.google.com/drive/folders/1BT1UsrvG1MB1bWCVYDWk6XLOZFIOLcj0?usp=sharing) 
 
-    1.1. [Synthetic datasets](https://drive.google.com/drive/folders/1_EoXOrBrJYFIVGXCnNRifSXQecJTjNC5?usp=sharing) (Section 3.1)
+    1.1. [Synthetic datasets](https://drive.google.com/drive/folders/1_EoXOrBrJYFIVGXCnNRifSXQecJTjNC5?usp=sharing) 
 
-    1.2. [Real datasets](https://drive.google.com/drive/folders/1wY9F3p4qOdvxkjXsIl2GGHTk_lJYiRds?usp=sharing) (Section 3.2)
+    1.2. [Real datasets](https://drive.google.com/drive/folders/1wY9F3p4qOdvxkjXsIl2GGHTk_lJYiRds?usp=sharing) 
 
-2. [Spatial join execution datasets](https://github.com/tinvukhac/sjml-resources/tree/main/data/ranked_join_results) (Section 4.2)
+2. [Spatial join execution datasets](https://github.com/tinvukhac/sjml-resources/tree/main/data/ranked_join_results) 
 
-3. [Datasets for spatial join cost models](https://github.com/tinvukhac/sjml-resources/tree/main/data/train_and_test_all_features) (Section 4.3)
+3. [Datasets for spatial join cost models](https://github.com/tinvukhac/sjml-resources/tree/main/data/train_and_test_all_features) 
+
+4. [Datasets for tuning models](https://drive.google.com/drive/folders/11QV1oNErLJC8I8IMPCU30eiNdEIEEuYw?usp=share_link) 
 
 ## Spatial data generators
 Research on the spatial data generators were published at [Spatial Gems 2019](https://www.spatialgems.net/spatial-gems-collection) 
