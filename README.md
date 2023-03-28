@@ -1,6 +1,6 @@
 # A learning based framework for spatial join processing: estimation, optimization and tuning
 
-This is the end-point for the resources of the paper "A learning based framework for spatial join processing: estimation, optimization and tuning", Tin Vu, Alberto Belussi, Sara Migliorini, and Ahmed Eldawy. This paper has been submitted to The International Journal on Very Large Data Bases (VLDB Journal).
+This is the end-point for the resources of the paper "A learning based framework for spatial join processing: estimation, optimization and tuning", Tin Vu, Alberto Belussi, Sara Migliorini, and Ahmed Eldawy. This paper has been submitted to The International Journal on Very Large Data Bases (VLDB Journal), Special Issue on Machine Learning and Databases.
 
 ## Datasets 
 1. [Join input datasets](https://drive.google.com/drive/folders/1BT1UsrvG1MB1bWCVYDWk6XLOZFIOLcj0?usp=sharing) 
