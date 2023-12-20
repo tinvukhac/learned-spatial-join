@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import plot_confusion_matrix
-from sklearn.metrics import confusion_matrix
+# from sklearn.metrics import plot_confusion_matrix
+# from sklearn.metrics import confusion_matrix
 import time
 import numpy as np
 
@@ -117,21 +117,21 @@ class ClassificationModel(ModelInterface):
         print('Accuracy:', metrics.accuracy_score(y_test, y_pred))
 
         # Plot non-normalized confusion matrix
-        titles_options = [("figures/confusion_matrix_without_normalization.png", None),
-                          ("figures/confusion_matrix_with_normalization.png", 'true')]
-        class_names = ['BNLJ', 'PBSM', 'DJ', 'RepJ']
-        for title, normalize in titles_options:
-            plt.rcParams.update({'font.size': 14})
-            disp = plot_confusion_matrix(loaded_model, X_test, y_test,
-                                         display_labels=class_names,
-                                         cmap=plt.cm.Blues,
-                                         normalize=normalize)
-            disp.ax_.set_title("")
-
-            print(title)
-            print(disp.confusion_matrix)
-            plt.xlabel('Predicted algorithm', fontsize=16)
-            plt.ylabel('Actual best algorithm', fontsize=16)
-            plt.savefig(title)
+        # titles_options = [("figures/confusion_matrix_without_normalization.png", None),
+        #                   ("figures/confusion_matrix_with_normalization.png", 'true')]
+        # class_names = ['BNLJ', 'PBSM', 'DJ', 'RepJ']
+        # for title, normalize in titles_options:
+        #     plt.rcParams.update({'font.size': 14})
+        #     disp = plot_confusion_matrix(loaded_model, X_test, y_test,
+        #                                  display_labels=class_names,
+        #                                  cmap=plt.cm.Blues,
+        #                                  normalize=normalize)
+        #     disp.ax_.set_title("")
+        #
+        #     print(title)
+        #     print(disp.confusion_matrix)
+        #     plt.xlabel('Predicted algorithm', fontsize=16)
+        #     plt.ylabel('Actual best algorithm', fontsize=16)
+        #     plt.savefig(title)
 
         return acc, acc, acc, acc

@@ -40,6 +40,30 @@ def get_partitions(filename, block_size):
     return partitions
 
 
+def get_partitions_new_format(filename, block_size):
+
+    partitions = []
+    with open(filename) as f:
+        lines = f.readlines()
+        lines.pop(0)
+        for line in lines:
+            values = line.split('\t')
+            partition = Partition()
+            try:
+                # partition.partitionId = int(values[0])
+                partition.numRecords = int(values[2])
+                partition.filesize = int(values[5])
+                partition.filename = values[1].replace("'", "")
+                partition.x1, partition.y1, partition.x2, partition.y2 = float(values[9]), float(values[10]), float(values[11]), float(values[12])
+                partition.nblocks = math.ceil(float(values[5]) / (block_size * 1024 * 1024))
+                partition.mbr = Polygon([(partition.x1, partition.y1), (partition.x1, partition.y2), (partition.x2, partition.y2), (partition.x2, partition.y1)])
+            except Exception as e:
+                print(filename)
+                print(e)
+            partitions.append(partition)
+    return partitions
+
+
 def combine_partitions(partitions, block_size):
     partition = Partition()
     min_x, min_y, max_x, max_y = float('inf'), float('inf'), float('-inf'), float('-inf')
@@ -122,3 +146,15 @@ def get_cost(partitions, query_ratio, min_x, min_y, max_x, max_y):
     for p in partitions:
         cost += (abs(p.x2 - p.x1) + q) * (abs(p.y2 - p.y1) + q) * p.nblocks / (w * h)
     return cost
+
+
+def extract_partitions_features_from_master_file(master_file):
+    partitions = get_partitions_new_format(master_file, block_size=128)
+    total_area = get_total_area(partitions)
+    total_margin = get_total_margin(partitions)
+    total_overlap = get_total_overlap(partitions)
+    load_balance = get_size_std(partitions)
+    disk_util = get_disk_util(partitions, block_size=128)
+    total_blocks = get_total_blocks(partitions)
+
+    print('{}, {}, {}, {}, {}, {}'.format(total_area, total_margin, total_overlap, load_balance, disk_util, total_blocks))
