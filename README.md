@@ -9,11 +9,13 @@ This is the end-point for the resources of the paper "A learning based framework
 
     1.2. [Real datasets](https://drive.google.com/drive/folders/1wY9F3p4qOdvxkjXsIl2GGHTk_lJYiRds?usp=sharing) 
 
-2. [Spatial join execution datasets](https://github.com/tinvukhac/sjml-resources/tree/main/data/ranked_join_results) 
+2. [Spatial join execution datasets](https://github.com/tinvukhac/sjml-resources/tree/main/data/ranked_join_results)
 
-3. [Datasets for spatial join cost models](https://github.com/tinvukhac/sjml-resources/tree/main/data/train_and_test_all_features) 
+3. [Distribution of the best spatial join algorithm](https://docs.google.com/spreadsheets/d/1ptFiWTKSWYFnHiUlBscgSUyZPitbPaYlSfFuzUXWCcg/edit?usp=sharing)
 
-4. [Datasets for tuning models](https://drive.google.com/drive/folders/11QV1oNErLJC8I8IMPCU30eiNdEIEEuYw?usp=share_link) 
+4. [Datasets for spatial join cost models](https://github.com/tinvukhac/sjml-resources/tree/main/data/train_and_test_all_features) 
+
+5. [Datasets for tuning models](https://drive.google.com/drive/folders/11QV1oNErLJC8I8IMPCU30eiNdEIEEuYw?usp=share_link) 
 
 ## Spatial data generators
 Research on the spatial data generators were published at [Spatial Gems 2019](https://www.spatialgems.net/spatial-gems-collection) 
@@ -57,7 +59,7 @@ But you could use other IDEs(e.g. IntelliJ) or any other code editors.
 we would recommend you to install [Anaconda](https://docs.anaconda.com/anaconda/install/). In particular, you could use an environment which is identical with ours as the following steps:
 1. [Install Anaconda](https://docs.continuum.io/anaconda/install/)
 2. Add conda to your $PATH variable: /home/your_username/anaconda3/condabin
-3. Move to the project directory: cd */deep-spatial-join
+3. Move to the project directory: cd */learned-spatial-join
 4. Follow this tutorial to create an environment from our environment.yml file: [Creating an environment from an environment.yml file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 5. Activate the environment. Now you are ready to play with the models!  
 
