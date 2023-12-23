@@ -103,3 +103,5 @@ python main.py --model clf_random_forest --tab data/train_and_test_all_features_
 4. Make sure that the training/testing data files are in correct format (refer to existing files).
 5. Train your own models. 
 
+### Contact us
+If you have any questions, please feel free to contact us: tvu032 at ucr dot edu
